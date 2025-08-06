@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 import './App.css';
 import type { Schema } from "../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
 
-const client = generateClient<Schema>();
 const WEBSOCKET_URL = "wss://b96kdpstti.execute-api.ap-northeast-1.amazonaws.com/dev/";
 
 function App() {
